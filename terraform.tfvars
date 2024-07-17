@@ -8,3 +8,5 @@ aft_management_account_id   = ""
 github_username             = ""
 ct_home_region              = ""
 tf_backend_secondary_region = ""
+aft_account_request_repo    = ""
+

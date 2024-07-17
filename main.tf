@@ -11,8 +11,12 @@ module "aft" {
   tf_backend_secondary_region = var.tf_backend_secondary_region
 
   vcs_provider                                  = "github"
-  account_request_repo_name                     = "${var.github_username}/learn-terraform-aft-account-request"
-  account_provisioning_customizations_repo_name = "${var.github_username}/learn-terraform-aft-account-provisioning-customizations"
-  global_customizations_repo_name               = "${var.github_username}/learn-terraform-aft-global-customizations"
-  account_customizations_repo_name              = "${var.github_username}/learn-terraform-aft-account-customizations"
+  account_request_repo_name                     = "${var.github_username}/${var.aft_account_request_repo}"
+#  account_provisioning_customizations_repo_name = "${var.github_username}/learn-terraform-aft-account-provisioning-customizations"
+#  global_customizations_repo_name               = "${var.github_username}/learn-terraform-aft-global-customizations"
+#  account_customizations_repo_name              = "${var.github_username}/learn-terraform-aft-account-customizations"
+ 
+#  terraform_distribution = "tfc"
+#  terraform_token        = "EXAMPLE-uoc1c1qsw7poexampleewjeno1pte3rw"
+#  terraform_org_name     = "WdCompany" 
 }
