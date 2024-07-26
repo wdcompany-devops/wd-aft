@@ -16,3 +16,7 @@ variable "ct_home_region" {}
 variable "tf_backend_secondary_region" {}
 
 variable "aft_account_request_repo" {}
+
+variable "aft_account_provisioning_customizations_repo" {}
+
+variable "tfc_token" {}
