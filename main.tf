@@ -12,11 +12,11 @@ module "aft" {
 
   vcs_provider                                  = "github"
   account_request_repo_name                     = "${var.github_username}/${var.aft_account_request_repo}"
-#  account_provisioning_customizations_repo_name = "${var.github_username}/learn-terraform-aft-account-provisioning-customizations"
+  account_provisioning_customizations_repo_name = "${var.github_username}/${var.aft_account_provisioning_customizations_repo}"
 #  global_customizations_repo_name               = "${var.github_username}/learn-terraform-aft-global-customizations"
 #  account_customizations_repo_name              = "${var.github_username}/learn-terraform-aft-account-customizations"
  
-#  terraform_distribution = "tfc"
-#  terraform_token        = "EXAMPLE-uoc1c1qsw7poexampleewjeno1pte3rw"
-#  terraform_org_name     = "WdCompany" 
+  terraform_distribution = "tfc"
+  terraform_token        = "${var.tfc_token}"
+  terraform_org_name     = "WdCompany" 
 }
