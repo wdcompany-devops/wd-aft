@@ -13,8 +13,8 @@ module "aft" {
   vcs_provider                                  = "github"
   account_request_repo_name                     = "${var.github_username}/${var.aft_account_request_repo}"
   account_provisioning_customizations_repo_name = "${var.github_username}/${var.aft_account_provisioning_customizations_repo}"
-#  global_customizations_repo_name               = "${var.github_username}/learn-terraform-aft-global-customizations"
-#  account_customizations_repo_name              = "${var.github_username}/learn-terraform-aft-account-customizations"
+  global_customizations_repo_name               = "${var.github_username}/${var.aft-global-customizations_repo}"
+  account_customizations_repo_name              = "${var.github_username}/${var.aft-account-customizations_repo}"
  
   terraform_distribution = "tfc"
   terraform_token        = "${var.tfc_token}"

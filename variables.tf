@@ -19,4 +19,8 @@ variable "aft_account_request_repo" {}
 
 variable "aft_account_provisioning_customizations_repo" {}
 
+variable "aft-global-customizations_repo" {}
+
+variable "aft-account-customizations_repo" {}
+
 variable "tfc_token" {}
